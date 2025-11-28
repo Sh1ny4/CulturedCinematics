@@ -15,9 +15,9 @@
 	</DependedModules>
 	<SubModules>
 		<SubModule>
-			<Name value="FullScreenCinematics" />
-			<DLLName value="FullScreenCinematics.dll" />
-			<SubModuleClassType value="FullScreenCinematics.SubModule" />
+			<Name value="CulturedCinematics" />
+			<DLLName value="CulturedCinematics.dll" />
+			<SubModuleClassType value="CulturedCinematics.SubModule" />
 			<Tags />
 		</SubModule>
 	</SubModules>
