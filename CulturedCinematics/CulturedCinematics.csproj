@@ -223,6 +223,7 @@
     <Compile Include="patches\BecomeKing\BecomeKingSceneCulturePatch.cs" />
     <Compile Include="patches\ClanMemberDeath\ClanMemberDeathPeaceCulturePatch.cs" />
     <Compile Include="patches\ClanMemberDeath\ClanMemberDeathWarCulturePatch.cs" />
+    <Compile Include="patches\Execution\ExecutionExtensionMethods.cs" />
     <Compile Include="patches\Execution\ExecutionSceneCulturePatch.cs" />
     <Compile Include="patches\Execution\ExecutionSceneNPCAmountPatch.cs" />
     <Compile Include="patches\FallbackForSceneMissing.cs" />

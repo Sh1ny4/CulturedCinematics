@@ -8,7 +8,7 @@ namespace CulturedCinematics
         protected override void OnSubModuleLoad()
         {
             base.OnSubModuleLoad();
-            new Harmony("CulturedCinematics.patches").PatchAll();
+            new Harmony("CulturedCinematics.CulturedCinematics").PatchAll();
         }
     }
 }
