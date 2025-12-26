@@ -2,10 +2,10 @@
 <Module>
 	<Name value="Cultured Cinematics"/>
 	<Id value="CulturedCinematics"/>
-	<Version value="v1.3.11"/>
+	<Version value="v1.3.13"/>
 	<SingleplayerModule value="true"/>
 	<MultiplayerModule value="false"/>
-	<ModuleType value ="Community" />
+	<ModuleType value="Community" />
 	<DependedModules>
 		<DependedModule Id="Native"/>
 		<DependedModule Id="Sandbox"/>
