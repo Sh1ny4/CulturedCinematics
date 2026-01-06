@@ -16,38 +16,42 @@ namespace FullScreenCinematics.Patches.KingdomJoin
         static void Postfix(ref JoinKingdomSceneNotificationItem __instance, ref SceneNotificationData.SceneNotificationCharacter[] __result)
         {
             List<SceneNotificationData.SceneNotificationCharacter> list = new List<SceneNotificationData.SceneNotificationCharacter>();
+
             Hero leader = __instance.NewMemberClan.Leader;
             Equipment overridenEquipment = leader.BattleEquipment.Clone(false);
             CampaignSceneNotificationHelper.RemoveWeaponsFromEquipment(ref overridenEquipment, true, false);
             list.Add(CampaignSceneNotificationHelper.CreateNotificationCharacterFromHero(leader, overridenEquipment, false, default(BodyProperties), uint.MaxValue, uint.MaxValue, false));
+
             Hero king = __instance.KingdomToUse.Leader;
             Equipment overridenEquipment2 = king.BattleEquipment.Clone(false);
             CampaignSceneNotificationHelper.RemoveWeaponsFromEquipment(ref overridenEquipment2, true, false);
             list.Add(CampaignSceneNotificationHelper.CreateNotificationCharacterFromHero(king, overridenEquipment2, false, default(BodyProperties), uint.MaxValue, uint.MaxValue, false));
-            foreach (Hero hero in GetAudienceForKingdomJoin(__instance.KingdomToUse, __instance.NewMemberClan).Take(16))
+
+            foreach (Hero hero in GetAudienceForKingdomJoin(__instance.KingdomToUse, __instance.NewMemberClan).Take(10))
             {
                 Equipment overridenEquipment3 = hero.CivilianEquipment.Clone(false);
                 CampaignSceneNotificationHelper.RemoveWeaponsFromEquipment(ref overridenEquipment3, true, false);
                 list.Add(CampaignSceneNotificationHelper.CreateNotificationCharacterFromHero(hero, overridenEquipment3, false, default(BodyProperties), uint.MaxValue, uint.MaxValue, false));
             }
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 6; i++)
             {
                 list.AddItem(CampaignSceneNotificationHelper.GetBodyguardOfCulture(__instance.KingdomToUse.Culture));
             }
             __result = list.ToArray();
         }
 
-        public static Hero[] GetAudienceForKingdomJoin(Kingdom kingdom, Clan NewMemberClan)
+        public static IEnumerable<Hero> GetAudienceForKingdomJoin(Kingdom kingdom, Clan NewMemberClan)
         {
-            Hero[] audiance = new Hero[] {};
-            foreach( Hero hero in kingdom.Heroes)
+            IOrderedEnumerable<Hero> orderedEnumerable = (from h in kingdom.Heroes.WhereQ((Hero h) => h != h.Clan.Kingdom.Leader)
+                                                          orderby h.GetRelationWithPlayer()
+                                                          select h);
+            foreach (Hero item in orderedEnumerable)
             {
-                audiance.Append(hero);
+                if (!item.IsChild && item != Hero.MainHero && item.IsAlive && !item.IsFactionLeader)
+                {
+                    yield return item;
+                }
             }
-            var audianceout = from hero in audiance
-                        orderby hero.GetRelation(NewMemberClan.Leader) descending
-                        select hero;
-            return audianceout.ToArrayQ<Hero>();
         }
     }
 }
