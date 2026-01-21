@@ -7,7 +7,7 @@ namespace FullScreenCinematics.Patches
 {
     internal class FallbackForSceneMissing
     {
-        //honestly I would recommend this, it would be better to make sure every culture has a map and removing this code, since it's a security risk
+        //honestly I would not recommend doing it this way, it would be better to make sure every culture has a map and removing this code, since it's a security risk ?
         [HandleProcessCorruptedStateExceptions]
         [SecurityCritical]
         public bool TryGetSceneExist(string text)

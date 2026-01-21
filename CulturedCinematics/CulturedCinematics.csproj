@@ -223,14 +223,10 @@
     <Compile Include="patches\BecomeKing\BecomeKingSceneCulturePatch.cs" />
     <Compile Include="patches\ClanMemberDeath\ClanMemberDeathPeaceCulturePatch.cs" />
     <Compile Include="patches\ClanMemberDeath\ClanMemberDeathWarCulturePatch.cs" />
-    <Compile Include="patches\Execution\ExecutionExtensionMethods.cs" />
-    <Compile Include="patches\Execution\ExecutionSceneCulturePatch.cs" />
-    <Compile Include="patches\Execution\ExecutionSceneNPCAmountPatch.cs" />
+    <Compile Include="patches\CulturedExecutionScene.cs" />
     <Compile Include="patches\FallbackForSceneMissing.cs" />
-    <Compile Include="patches\KingdomCreation\KingdomCreationSceneCulturePatch.cs" />
-    <Compile Include="patches\KingdomCreation\KingdomCreationSceneNPCAmountPatch.cs" />
-    <Compile Include="patches\KingdomJoin\KingdomJoinSceneCulturePatch.cs" />
-    <Compile Include="patches\KingdomJoin\KingdomJoinSceneNPCAmountPatch.cs" />
+    <Compile Include="patches\CulturedKingdomCreationScene.cs" />
+    <Compile Include="patches\CulturedKingdomJoinScene.cs" />
     <Compile Include="patches\Marriage\MarriageSceneCulturePatch.cs" />
     <Compile Include="patches\PlayerDeath\BattleDeathDefeatCulturePatch.cs" />
     <Compile Include="patches\PlayerDeath\BattleDeathVictoryCulturePatch.cs" />
