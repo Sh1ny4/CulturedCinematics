@@ -48,7 +48,7 @@ namespace FullScreenCinematics.Patches.KingdomJoin
             }
             for (int i = 0; i < 6; i++)
             {
-                list.AddItem(CampaignSceneNotificationHelper.GetBodyguardOfCulture(__instance.KingdomToUse.Culture));
+                list.Add(CampaignSceneNotificationHelper.GetBodyguardOfCulture(__instance.KingdomToUse.Culture));
             }
             __result = list.ToArray();
         }
