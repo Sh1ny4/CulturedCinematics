@@ -8,7 +8,7 @@
         culture="Culture.aserai"
         name="{=!}Tournament Aserai">
         <face>
-            <face_key_template value="BodyProperty.guard" />
+            <face_key_template value="BodyProperty.fighter_aserai" />
         </face>
         <skills >
             <skill id="Athletics" value="50"/>
@@ -55,7 +55,7 @@
         culture="Culture.battania"
         name="{=!}Tournament Battania">
         <face>
-            <face_key_template value="BodyProperty.guard" />
+            <face_key_template value="BodyProperty.fighter_battania" />
         </face>
         <skills >
             <skill id="Athletics" value="50"/>
@@ -102,7 +102,7 @@
         culture="Culture.empire"
         name="{=!}Tournament Empire">
         <face>
-            <face_key_template value="BodyProperty.guard" />
+            <face_key_template value="BodyProperty.fighter_empire" />
         </face>
         <skills >
             <skill id="Athletics" value="50"/>
@@ -149,7 +149,7 @@
         culture="Culture.khuzait"
         name="{=!}Tournament Khuzait">
         <face>
-            <face_key_template value="BodyProperty.guard" />
+            <face_key_template value="BodyProperty.fighter_khuzait" />
         </face>
         <skills >
             <skill id="Athletics" value="50"/>
@@ -195,7 +195,7 @@
         culture="Culture.nord"
         name="{=!}Tournament Nord">
         <face>
-            <face_key_template value="BodyProperty.guard" />
+            <face_key_template value="BodyProperty.fighter_nord" />
         </face>
         <skills >
             <skill id="Athletics" value="50"/>
@@ -242,7 +242,7 @@
         culture="Culture.sturgia"
         name="{=!}Tournament Sturgia">
         <face>
-            <face_key_template value="BodyProperty.guard" />
+            <face_key_template value="BodyProperty.fighter_sturgia" />
         </face>
         <skills >
             <skill id="Athletics" value="50"/>
@@ -288,7 +288,7 @@
         culture="Culture.vlandia"
         name="{=!}Tournament Vlandia">
         <face>
-            <face_key_template value="BodyProperty.guard" />
+            <face_key_template value="BodyProperty.fighter_vlandia" />
         </face>
         <skills >
             <skill id="Athletics" value="50"/>
