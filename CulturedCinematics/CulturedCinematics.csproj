@@ -227,6 +227,7 @@
     <Compile Include="patches\FallbackForSceneMissing.cs" />
     <Compile Include="patches\CulturedKingdomCreationScene.cs" />
     <Compile Include="patches\CulturedKingdomJoinScene.cs" />
+    <Compile Include="patches\GetBodyGuardOfCulturePatch.cs" />
     <Compile Include="patches\Marriage\MarriageSceneCulturePatch.cs" />
     <Compile Include="patches\PlayerDeath\BattleDeathDefeatCulturePatch.cs" />
     <Compile Include="patches\PlayerDeath\BattleDeathVictoryCulturePatch.cs" />

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<NPCCharacters>
+    <NPCCharacter id="cutscene_bodyguard_aserai"
+        default_group="Infantry"
+        is_hero="false"
+        occupation="Special"
+        level="26"
+        culture="Culture.aserai"
+        name="{=!}Tournament Aserai">
+        <face>
+            <face_key_template value="BodyProperty.guard" />
+        </face>
+        <skills >
+            <skill id="Athletics" value="50"/>
+            <skill id="Riding" value="50"/>
+            <skill id="OneHanded" value="50"/>
+            <skill id="TwoHanded" value="50"/>
+            <skill id="Polearm" value="50"/>
+            <skill id="Bow" value="50"/>
+            <skill id="Crossbow" value="50"/>
+            <skill id="Throwing" value="50"/>
+        </skills>
+        <Equipments>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.aserai_noble_sword_3_t5" />
+                <equipment slot="Head" id="Item.brass_aserai_helmet_b_open" />
+                <equipment slot="Cape" id="Item.leopard_pelt" />
+                <equipment slot="Body" id="Item.aserai_scale_armor_on_chain" />
+                <equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
+                <equipment slot="Leg" id="Item.plated_strip_boots" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.aserai_noble_sword_2_t5" />
+                <equipment slot="Head" id="Item.brass_aserai_helmet_b_open" />
+                <equipment slot="Cape" id="Item.leopard_pelt" />
+                <equipment slot="Body" id="Item.aserai_full_scale_armor_on_chain" />
+                <equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
+                <equipment slot="Leg" id="Item.plated_strip_boots" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.aserai_noble_sword_2_t5" />
+                <equipment slot="Head" id="Item.brass_aserai_helmet_b_open" />
+                <equipment slot="Cape" id="Item.leopard_pelt" />
+                <equipment slot="Body" id="Item.aserai_brass_plate_a" />
+                <equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
+                <equipment slot="Leg" id="Item.plated_strip_boots" />
+            </EquipmentRoster>
+        </Equipments>
+    </NPCCharacter>
+    <NPCCharacter id="cutscene_bodyguard_battania"
+        default_group="Infantry"
+        is_hero="false"
+        occupation="Special"
+        level="26"
+        culture="Culture.battania"
+        name="{=!}Tournament Battania">
+        <face>
+            <face_key_template value="BodyProperty.guard" />
+        </face>
+        <skills >
+            <skill id="Athletics" value="50"/>
+            <skill id="Riding" value="50"/>
+            <skill id="OneHanded" value="50"/>
+            <skill id="TwoHanded" value="50"/>
+            <skill id="Polearm" value="50"/>
+            <skill id="Bow" value="50"/>
+            <skill id="Crossbow" value="50"/>
+            <skill id="Throwing" value="50"/>
+        </skills>
+        <Equipments>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.battania_2hsword_5_t5" />
+                <equipment slot="Head" id="Item.battanian_crowned_helmet" />
+                <equipment slot="Cape" id="Item.battania_shoulder_strap_cloak" />
+                <equipment slot="Body" id="Item.battania_noble_armor" />
+                <equipment slot="Gloves" id="Item.northern_brass_bracers" />
+                <equipment slot="Leg" id="Item.battania_leather_boots" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.battania_2hsword_2_t3" />
+                <equipment slot="Head" id="Item.battanian_crowned_helmet" />
+                <equipment slot="Cape" id="Item.battania_cloak" />
+                <equipment slot="Body" id="Item.battanian_scale_armor_a" />
+                <equipment slot="Gloves" id="Item.northern_brass_bracers" />
+                <equipment slot="Leg" id="Item.battania_leather_boots" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.battania_2hsword_2_t3" />
+                <equipment slot="Head" id="Item.sturgian_lord_helmet_a" />
+                <equipment slot="Cape" id="Item.battania_cloak" />
+                <equipment slot="Body" id="Item.battanian_chainmail_armor_d" />
+                <equipment slot="Gloves" id="Item.northern_brass_bracers" />
+                <equipment slot="Leg" id="Item.battania_leather_boots" />
+            </EquipmentRoster>
+        </Equipments>
+    </NPCCharacter>
+    <NPCCharacter id="cutscene_bodyguard_empire"
+        default_group="Infantry"
+        is_hero="false"
+        occupation="Special"
+        level="26"
+        culture="Culture.empire"
+        name="{=!}Tournament Empire">
+        <face>
+            <face_key_template value="BodyProperty.guard" />
+        </face>
+        <skills >
+            <skill id="Athletics" value="50"/>
+            <skill id="Riding" value="50"/>
+            <skill id="OneHanded" value="50"/>
+            <skill id="TwoHanded" value="50"/>
+            <skill id="Polearm" value="50"/>
+            <skill id="Bow" value="50"/>
+            <skill id="Crossbow" value="50"/>
+            <skill id="Throwing" value="50"/>
+        </skills>
+        <Equipments>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.empire_noble_sword_2_t5" />
+                <equipment slot="Head" id="Item.empire_battle_crown_west" />
+                <equipment slot="Cape" id="Item.varangian_bra_scale" />
+                <equipment slot="Body" id="Item.empire_plate_vest_armor" />
+                <equipment slot="Gloves" id="Item.decorated_imperial_gauntlets" />
+                <equipment slot="Leg" id="Item.decorated_imperial_boots" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.empire_noble_sword_2_t5" />
+                <equipment slot="Head" id="Item.empire_battle_crown_west" />
+                <equipment slot="Cape" id="Item.varangian_bra_royal" />
+                <equipment slot="Body" id="Item.empire_plate_vest_armor" />
+                <equipment slot="Gloves" id="Item.decorated_imperial_gauntlets" />
+                <equipment slot="Leg" id="Item.decorated_imperial_boots" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.empire_noble_sword_2_t5" />
+                <equipment slot="Head" id="Item.empire_lord_helmet" />
+                <equipment slot="Cape" id="Item.varangian_bra_royal" />
+                <equipment slot="Body" id="Item.imperial_lamellar_over_leather" />
+                <equipment slot="Gloves" id="Item.decorated_imperial_gauntlets" />
+                <equipment slot="Leg" id="Item.decorated_imperial_boots" />
+            </EquipmentRoster>
+        </Equipments>
+    </NPCCharacter>
+    <NPCCharacter id="cutscene_bodyguard_khuzait"
+        default_group="Infantry"
+        is_hero="false"
+        occupation="Special"
+        level="26"
+        culture="Culture.khuzait"
+        name="{=!}Tournament Khuzait">
+        <face>
+            <face_key_template value="BodyProperty.guard" />
+        </face>
+        <skills >
+            <skill id="Athletics" value="50"/>
+            <skill id="Riding" value="50"/>
+            <skill id="OneHanded" value="50"/>
+            <skill id="TwoHanded" value="50"/>
+            <skill id="Polearm" value="50"/>
+            <skill id="Bow" value="50"/>
+            <skill id="Crossbow" value="50"/>
+            <skill id="Throwing" value="50"/>
+        </skills>
+        <Equipments>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.khuzait_mace_4_t5" />
+                <equipment slot="Head" id="Item.khuzait_noble_helmet_with_feathers" />
+                <equipment slot="Cape" id="Item.lamellar_shoulders" />
+                <equipment slot="Body" id="Item.eastern_lamellar_armor" />
+                <equipment slot="Leg" id="Item.eastern_leather_boots" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.khuzait_mace_4_t5" />
+                <equipment slot="Head" id="Item.khuzait_noble_helmet_with_feathers" />
+                <equipment slot="Cape" id="Item.a_metal_lamellar_armor_shoulder_a" />
+                <equipment slot="Body" id="Item.eastern_lamellar_armor" />
+                <equipment slot="Gloves" id="Item.nord_casual_bracers" />
+                <equipment slot="Leg" id="Item.eastern_leather_boots" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.khuzait_mace_4_t5" />
+                <equipment slot="Head" id="Item.plumed_nomad_helmet" />
+                <equipment slot="Cape" id="Item.a_battania_cloak_a" />
+                <equipment slot="Body" id="Item.khuzait_heavy_armor" />
+                <equipment slot="Gloves" id="Item.khuzait_heavy_armor_bracer" />
+                <equipment slot="Leg" id="Item.eastern_leather_boots" />
+            </EquipmentRoster>
+        </Equipments>
+    </NPCCharacter>
+    <NPCCharacter id="cutscene_bodyguard_nord"
+        default_group="Infantry"
+        is_hero="false"
+        occupation="Special"
+        level="26"
+        culture="Culture.nord"
+        name="{=!}Tournament Nord">
+        <face>
+            <face_key_template value="BodyProperty.guard" />
+        </face>
+        <skills >
+            <skill id="Athletics" value="50"/>
+            <skill id="Riding" value="50"/>
+            <skill id="OneHanded" value="50"/>
+            <skill id="TwoHanded" value="50"/>
+            <skill id="Polearm" value="50"/>
+            <skill id="Bow" value="50"/>
+            <skill id="Crossbow" value="50"/>
+            <skill id="Throwing" value="50"/>
+        </skills>
+        <Equipments>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.sturgia_axe_5_t5" />
+                <equipment slot="Head" id="Item.closed_goggled_helmet" />
+                <equipment slot="Cape" id="Item.northman_raider_shoulder" />
+                <equipment slot="Body" id="Item.nord_king_armor" />
+                <equipment slot="Gloves" id="Item.hybrid_armor_gloves_b" />
+                <equipment slot="Leg" id="Item.hybrid_armor_boots_b" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.sturgia_axe_5_t5" />
+                <equipment slot="Head" id="Item.sturgian_lord_helmet_a" />
+                <equipment slot="Cape" id="Item.tacky_bandit_shoulder" />
+                <equipment slot="Body" id="Item.tacky_bandit" />
+                <equipment slot="Gloves" id="Item.tacky_bandit_bracer" />
+                <equipment slot="Leg" id="Item.tacky_bandit_boot" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.sturgia_axe_5_t5" />
+                <equipment slot="Head" id="Item.lendman_helmet_over_mail" />
+                <equipment slot="Cape" id="Item.northman_raider_shoulder" />
+                <equipment slot="Body" id="Item.nord_chainmail_armor" />
+                <equipment slot="Gloves" id="Item.tacky_bandit_bracer" />
+                <equipment slot="Leg" id="Item.tacky_bandit_boot" />
+            </EquipmentRoster>
+        </Equipments>
+    </NPCCharacter>
+    <NPCCharacter id="cutscene_bodyguard_sturgia"
+        default_group="Infantry"
+        is_hero="false"
+        occupation="Special"
+        level="26"
+        culture="Culture.sturgia"
+        name="{=!}Tournament Sturgia">
+        <face>
+            <face_key_template value="BodyProperty.guard" />
+        </face>
+        <skills >
+            <skill id="Athletics" value="50"/>
+            <skill id="Riding" value="50"/>
+            <skill id="OneHanded" value="50"/>
+            <skill id="TwoHanded" value="50"/>
+            <skill id="Polearm" value="50"/>
+            <skill id="Bow" value="50"/>
+            <skill id="Crossbow" value="50"/>
+            <skill id="Throwing" value="50"/>
+        </skills>
+        <Equipments>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.eastern_steel_mace_t4" />
+                <equipment slot="Head" id="Item.sturgian_lord_helmet_b" />
+                <equipment slot="Cape" id="Item.varangian_bra_royal" />
+                <equipment slot="Body" id="Item.sturgian_lamellar_fortified" />
+                <equipment slot="Gloves" id="Item.plated_strip_gauntlets" />
+                <equipment slot="Leg" id="Item.plated_strip_boots" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.vlandia_mace_2_t4" />
+                <equipment slot="Head" id="Item.sturgia_heavy_cavalary_helmet" />
+                <equipment slot="Cape" id="Item.fur_cloak_c" />
+                <equipment slot="Body" id="Item.northern_coat_of_plates" />
+                <equipment slot="Gloves" id="Item.northern_plated_gloves" />
+                <equipment slot="Leg" id="Item.northern_plated_boots" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.vlandia_mace_2_t4" />
+                <equipment slot="Head" id="Item.sturgian_battle_crown" />
+                <equipment slot="Cape" id="Item.varangian_bra_royal" />
+                <equipment slot="Body" id="Item.northern_brass_lamellar_over_mail" />
+                <equipment slot="Gloves" id="Item.reinforced_leather_vambraces" />
+                <equipment slot="Leg" id="Item.plated_strip_boots" />
+            </EquipmentRoster>
+        </Equipments>
+    </NPCCharacter>
+    <NPCCharacter id="cutscene_bodyguard_vlandia"
+        default_group="Infantry"
+        occupation="Special"
+        level="26"
+        culture="Culture.vlandia"
+        name="{=!}Tournament Vlandia">
+        <face>
+            <face_key_template value="BodyProperty.guard" />
+        </face>
+        <skills >
+            <skill id="Athletics" value="50"/>
+            <skill id="Riding" value="50"/>
+            <skill id="OneHanded" value="50"/>
+            <skill id="TwoHanded" value="50"/>
+            <skill id="Polearm" value="50"/>
+            <skill id="Bow" value="50"/>
+            <skill id="Crossbow" value="50"/>
+            <skill id="Throwing" value="50"/>
+        </skills>
+        <Equipments>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.empire_mace_4_t5" />
+                <equipment slot="Head" id="Item.nasal_helmet_with_mail" />
+                <equipment slot="Cape" id="Item.hood" />
+                <equipment slot="Body" id="Item.coat_of_plates_over_mail" />
+                <equipment slot="Gloves" id="Item.reinforced_mail_mitten" />
+                <equipment slot="Leg" id="Item.strapped_mail_chausses" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.sentinel_2hsword" />
+                <equipment slot="Head" id="Item.segmented_skullcap_over_mail_coif" />
+                <equipment slot="Cape" id="Item.hood" />
+                <equipment slot="Body" id="Item.vlandia_chainmail" />
+                <equipment slot="Gloves" id="Item.plated_strip_gauntlets" />
+                <equipment slot="Leg" id="Item.plated_strip_boots" />
+            </EquipmentRoster>
+            <EquipmentRoster>
+                <equipment slot="Item0" id="Item.sentinel_2hsword" />
+                <equipment slot="Head" id="Item.visored_helmet_over_mail_coif" />
+                <equipment slot="Cape" id="Item.hood" />
+                <equipment slot="Body" id="Item.white_coat_over_mail" />
+                <equipment slot="Gloves" id="Item.plated_strip_gauntlets" />
+                <equipment slot="Leg" id="Item.plated_strip_boots" />
+            </EquipmentRoster>
+        </Equipments>
+    </NPCCharacter>
+</NPCCharacters>

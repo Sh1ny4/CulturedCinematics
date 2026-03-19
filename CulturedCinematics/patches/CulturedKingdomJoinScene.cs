@@ -55,9 +55,7 @@ namespace FullScreenCinematics.Patches.KingdomJoin
 
         public static IEnumerable<Hero> GetAudienceForKingdomJoin(Kingdom kingdom, Clan NewMemberClan)
         {
-            IOrderedEnumerable<Hero> orderedEnumerable = (from h in kingdom.Heroes.WhereQ((Hero h) => h != h.Clan.Kingdom.Leader)
-                                                          orderby h.GetRelationWithPlayer()
-                                                          select h);
+            IOrderedEnumerable<Hero> orderedEnumerable = (from h in kingdom.Heroes.WhereQ((Hero h) => h != h.Clan.Kingdom.Leader) orderby h.GetRelationWithPlayer() select h);
             foreach (Hero item in orderedEnumerable)
             {
                 if (!item.IsChild && item != Hero.MainHero && item.IsAlive && !item.IsFactionLeader)
