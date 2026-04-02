@@ -48,19 +48,15 @@ namespace FullScreenCinematics.Patches.Execution
             {
                 list.Add(CampaignSceneNotificationHelper.CreateNotificationCharacterFromHero(companion, null, false, default(BodyProperties), uint.MaxValue, uint.MaxValue, false));
             }
-            for (int i = 0; i < 10; i++)
+            if (__instance.Victim.CharacterObject.StringId != "radagos_henchman")
             {
-                BasicCharacterObject npc = CampaignSceneNotificationHelper.GetRandomTroopForCulture(__instance.Executer.Clan.Culture);
-                list.Add(new SceneNotificationData.SceneNotificationCharacter(npc));
+                for (int i = 0; i < 10; i++)
+                {
+                    BasicCharacterObject npc = CampaignSceneNotificationHelper.GetRandomTroopForCulture(__instance.Executer.Clan.Culture);
+                    list.Add(new SceneNotificationData.SceneNotificationCharacter(npc));
+                }
             }
             __result = list.ToArray();
-        }
-    }
-    public static class ExecutionExtensionMethods
-    {
-        public static Banner[] GetBanners(this HeroExecutionSceneNotificationData str)
-        {
-            return new Banner[] { str.Executer.ClanBanner, str.Victim.ClanBanner };
         }
     }
 }
