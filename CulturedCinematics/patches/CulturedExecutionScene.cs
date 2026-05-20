@@ -59,7 +59,7 @@ namespace FullScreenCinematics.Patches.Execution
 				} else {
 					for (int i = 0; i < 10; i++)
 					{
-						BasicCharacterObject npc = CampaignSceneNotificationHelper.GetRandomTroopForCulture(__instance.Executer.CharacterObject.Culture);
+						BasicCharacterObject npc = CampaignSceneNotificationHelper.GetRandomTroopForCulture(__instance.Executer.Culture);
 						list.Add(new SceneNotificationData.SceneNotificationCharacter(npc));
 					}
 				}
