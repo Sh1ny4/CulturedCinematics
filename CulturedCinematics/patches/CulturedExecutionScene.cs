@@ -1,10 +1,9 @@
 ﻿using HarmonyLib;
-using Helpers;
 using System.Collections.Generic;
 using System.Linq;
+using TaleWorlds.Core;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.SceneInformationPopupTypes;
-using TaleWorlds.Core;
 
 namespace FullScreenCinematics.Patches.Execution
 {
