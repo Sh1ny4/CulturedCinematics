@@ -2,7 +2,7 @@
 <Module>
 	<Name value="Cultured Cinematics"/>
 	<Id value="CulturedCinematics"/>
-	<Version value="v1.3.15"/>
+	<Version value="v1.4.8"/>
 	<SingleplayerModule value="true"/>
 	<MultiplayerModule value="false"/>
 	<ModuleType value="Community" />
