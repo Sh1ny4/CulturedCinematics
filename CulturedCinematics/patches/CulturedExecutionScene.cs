@@ -1,9 +1,12 @@
 ﻿using HarmonyLib;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using TaleWorlds.Core;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.CharacterDevelopment;
 using TaleWorlds.CampaignSystem.SceneInformationPopupTypes;
+using TaleWorlds.Core;
 
 namespace FullScreenCinematics.Patches.Execution
 {
@@ -43,10 +46,10 @@ namespace FullScreenCinematics.Patches.Execution
             List<SceneNotificationData.SceneNotificationCharacter> list = new List<SceneNotificationData.SceneNotificationCharacter>();
             list.Add(CampaignSceneNotificationHelper.CreateNotificationCharacterFromHero(__instance.Victim, equipment, false, default(BodyProperties), uint.MaxValue, uint.MaxValue, false));
             list.Add(CampaignSceneNotificationHelper.CreateNotificationCharacterFromHero(__instance.Executer, equipment2, false, default(BodyProperties), uint.MaxValue, uint.MaxValue, false));
-            foreach (Hero companion in CampaignSceneNotificationHelper.GetMilitaryAudienceForHero(__instance.Executer).Take(1))
-            {
-                list.Add(CampaignSceneNotificationHelper.CreateNotificationCharacterFromHero(companion, null, false, default(BodyProperties), uint.MaxValue, uint.MaxValue, false));
-            }
+
+            var companions = CampaignSceneNotificationHelper.GetMilitaryAudienceForHero(__instance.Executer).OrderBy(hero => hero.GetTraitLevel(DefaultTraits.Mercy)).Take(1);
+            list.Add(CampaignSceneNotificationHelper.CreateNotificationCharacterFromHero(companions.ElementAt(0), null, false, default(BodyProperties), uint.MaxValue, uint.MaxValue, false));
+
             if (__instance.Victim.CharacterObject.StringId != "radagos_henchman")
             {
 				if(__instance.Executer.Clan != null){
